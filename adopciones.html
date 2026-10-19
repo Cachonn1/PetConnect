@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetConnect - Adopta</title>
+    <link rel="stylesheet" href="cliente.css">
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <header class="client-header">
+        <a class="client-brand" href="cliente.html"><span class="brand-paw">🐾</span><span>Pet<span>Connect</span></span></a>
+        <nav class="client-nav" id="clientNav"><a class="nav-link active" href="adopciones.html">Adopta</a><a class="nav-link" href="clinicas.html">Clínicas</a><a class="nav-link" href="productos.html">Productos</a></nav>
+        <div class="header-actions"><button class="btn-outline" id="btnLogin">Iniciar sesión</button><button class="btn-primary" id="btnPublish">Publicar mascota</button><button class="user-chip hidden" id="userChip"></button><a class="admin-access" href="index 2.html">Panel administrador</a></div>
+        <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menú">☰</button>
+    </header>
+    <main><section class="content-section adoption-page">
+        <div class="page-title"><span class="eyebrow">ADOPCIÓN RESPONSABLE</span><h1>Mascotas buscando hogar</h1><p>Encuentra un compañero compatible contigo y cambia dos vidas para siempre.</p></div>
+        <div class="section-heading"><div></div><button class="text-button" id="clearFilters">Limpiar filtros</button></div>
+        <div class="filters-bar"><label class="search-box"><span>⌕</span><input id="searchPets" type="search" placeholder="Buscar por nombre o ciudad..."></label><label><span class="filter-label">Especie</span><select id="speciesFilter"><option value="all">Todas</option><option value="Perro">Perros</option><option value="Gato">Gatos</option></select></label><label><span class="filter-label">Edad</span><select id="ageFilter"><option value="all">Cualquier edad</option><option value="Cachorro">Cachorro</option><option value="Joven">Joven</option><option value="Adulto">Adulto</option></select></label><label><span class="filter-label">Tamaño</span><select id="sizeFilter"><option value="all">Todos</option><option value="Pequeño">Pequeño</option><option value="Mediano">Mediano</option><option value="Grande">Grande</option></select></label></div>
+        <div class="results-meta"><span id="resultsCount"></span><span>Actualizado hoy</span></div><div class="pet-grid" id="petGrid"></div><div class="empty-state hidden" id="emptyPets">No encontramos mascotas con esos filtros.</div>
+    </section></main>
+    <footer class="client-footer"><strong>PetConnect</strong><span>Adopciones y cuidado responsable.</span><a href="cliente.html">Volver al inicio</a></footer>
+    <div class="modal-backdrop hidden" id="modalBackdrop"><div class="modal" role="dialog"><button class="modal-close" id="modalClose" aria-label="Cerrar">×</button><div id="modalContent"></div></div></div>
+    <script src="cliente.js"></script>
+</body>
+</html>

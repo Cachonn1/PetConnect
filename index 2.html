@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetConnect - Iniciar Sesión</title>
+    <link rel="stylesheet" href="style 2.css">
+</head>
+<body>
+
+    <div class="login-page">
+        <!-- MARCA PETCONNECT -->
+        <div class="login-brand">
+            <div class="brand-logo">
+                <span class="paw-icon">
+                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="32" cy="43" rx="15" ry="11"/>
+                        <ellipse cx="12" cy="27" rx="6.5" ry="8.5" transform="rotate(-18 12 27)"/>
+                        <ellipse cx="26" cy="15" rx="7" ry="9" transform="rotate(-6 26 15)"/>
+                        <ellipse cx="40" cy="15" rx="7" ry="9" transform="rotate(6 40 15)"/>
+                        <ellipse cx="53" cy="27" rx="6.5" ry="8.5" transform="rotate(18 53 27)"/>
+                    </svg>
+                </span>
+                <span>PetConnect</span>
+            </div>
+            <h1>El cuidado de tu mascota, más cerca que nunca.</h1>
+            <p class="tagline">Gestiona pedidos, compras y solicitudes desde un solo lugar.</p>
+        </div>
+
+        <!-- FORMULARIO DE LOGIN -->
+        <div class="login-panel">
+            <div class="login-card">
+                <h2>Bienvenido de nuevo</h2>
+                <p class="subtitle">Ingresa a tu panel de administración</p>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario" placeholder="Ej: admin">
+                        <span id="errorUsuario" class="field-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="••••••••">
+                        <span id="errorPassword" class="field-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn-login">Ingresar</button>
+
+                    <p id="errorMsg" class="error-message">
+                        Usuario o contraseña incorrectos.<br><small>(Usar: admin / 1234)</small>
+                    </p>
+                </form>
+                <a class="client-access-link" href="cliente.html">¿Eres cliente? Explora mascotas y adopta aquí →</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app 2.js"></script>
+</body>
+</html>
